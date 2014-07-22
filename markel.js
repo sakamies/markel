@@ -59,10 +59,10 @@ domready(function () {
     }
   }
 
-  var elements = document.querySelectorAll('[data-parse="markdown"]');
+  var elements = document.querySelectorAll('[data-markdown]');
   var element;
   // Gather elements that would be redundant to parse
-  var ignoredElements = document.querySelectorAll('[data-parse="markdown"] [data-parse="markdown"]');
+  var ignoredElements = document.querySelectorAll('[data-markdown] [data-markdown]');
 
   for (var i = 0; i < elements.length; i++) {
     element = elements[i];
